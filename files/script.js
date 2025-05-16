@@ -16,3 +16,8 @@ window.addEventListener('scroll', function () {
         navbar.classList.remove('scrolled');
       }
     });
+
+form.addEventListener('submit', function(e) {
+  e.preventDefault(); // This stops the form from submitting
+  // Make sure you handle the form properly here
+});

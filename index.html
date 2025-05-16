@@ -7,6 +7,13 @@
         <title>Charith Kumar</title>
         <link rel="shortcut icon" type="image/png" href="img/internet.png">
         <link rel="stylesheet" href='./files/style.css'>
+        <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+/>
+
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     </head>
@@ -14,10 +21,11 @@
         <header class="navbar">
             <div class="logo"><span class="highlight">Charith</span> Kumar</div>
             <nav class="nav-links">
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
+                <a href="#home" class="active">Home</a>
+                <a href="#about" class="active">About</a>
+                <a href="#education" class="active">Education</a>
+                <a href="#projects" class="active">Projects</a>
+                <a href="#contact" class="active">Contact</a>
             </nav>
         </header>
 
@@ -25,7 +33,7 @@
             <div class="intro-text">
                 <p class="hello-text">Hello, I'm</p>
                 <h1>Charith Kumar<br><span class="highlight-large">Tellakula</span></h1>
-                <h2>Crafting engaging and user-friendly <br>digital experiences</h2>
+                <h2>Blending function and creativity to build                                <br>      seamless user experiences        </h2>
                 <p class="description">A passionate web developer specializing in creating modern and <br> web applications with clean, efficient code. I build solutions that <br>combine beautiful design with powerful functionality.</p>
                 <div class="buttons">
                     <a href="#projects" class="btn primary">View My Work →</a>
@@ -34,10 +42,13 @@
             </div>
             <div class="profile-image">
                 <div class="image-circle">
-                    <img src="img/my_image.jpg" alt="Profile Image">
+                    <img src="img/image.jpg" alt="Profile Image">
                 </div>
             </div>
         </section>
+
+
+
 
         <div class="about-skills-section" id="about">
             <div class="about-me">
@@ -53,7 +64,7 @@
                 <div class="skill-category">
                     <h4 class="skill-title-blue">Languages</h4>
                     <div class="skill-tags">
-                        <span>JavaScript</span><span>TypeScript</span><span>Python</span><span>HTML</span><span>CSS</span>
+                        <span>Java</span><span>JavaScript</span><span>HTML</span><span>CSS</span><span>Python</span>
                     </div>
                 </div>
 
@@ -67,25 +78,92 @@
                 <div class="skill-category">
                     <h4 class="skill-title-blue">Back-end</h4>
                     <div class="skill-tags">
-                        <span>Node.js</span><span>Express</span><span>Django</span>
+                        <span>Node.js</span><span>Express</span>
                     </div>
                 </div>
 
                 <div class="skill-category">
                     <h4 class="skill-title-blue">Database</h4>
                     <div class="skill-tags">
-                        <span>MongoDB</span><span>PostgreSQL</span><span>MySQL</span>
+                        <span>MongoDB</span><span>MySQL</span>
                     </div>
                 </div>
 
                 <div class="skill-category">
                     <h4 class="skill-title-blue">Tools</h4>
                     <div class="skill-tags">
-                        <span>Git</span><span>Docker</span><span>Figma</span><span>VSCode</span>
+                        <span>Git</span><span>PyCharm</span><span>Figma</span><span>VSCode</span>
                     </div>
                 </div>
             </div>
         </div>
+
+        <section class="education-certifications" id="education">
+    <div class="edu-section-header">
+  <h2><span>Education & Certifications</span></h2>
+</div>
+
+  <div class="edu-cert-container">
+    <!-- Education Column -->
+    <div class="education-column">
+      <h3 class="edu-heading"><i class="fas fa-graduation-cap"></i> Education</h3>
+
+      <div class="edu-card">
+        <div class="edu-icon">
+          <i class="fas fa-graduation-cap"></i>
+        </div>
+        <div class="edu-details">
+          <h4 style="margin-bottom: 6px;">B.Tech Computer Science and Engineering</h4>
+          <p style="font-size: 15px; margin-bottom: 6px;">KL University, Vijayawada</p>
+          <p style="font-size: 14px; margin-bottom: 6px;">2021 - 2025</p>
+          <p class="cgpa"><span>CGPA: 9.03</span></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Certifications Column -->
+    <div class="certification-column">
+      <h3 class="cert-heading"><i class="fas fa-certificate"></i> Certifications</h3>
+
+      <div class="edu-card">
+        <div class="edu-icon">
+          <i class="fas fa-award"></i>
+        </div>
+        <div class="edu-details">
+          <h4>Salesforce AI Associate</h4>
+          <p>Salesforce | Dec 2024</p>
+          <a href="https://trailhead.salesforce.com/en/credentials/certification-detail-print/?searchString=QftNRu2oJdKlVeZOOfvzvxLZ11M2GCjbX5pQ5zJ0I0vDaPq6+v0d2t378MZ8KeI4" target="_blank" class="view-link">Click to view →</a>
+        </div>
+      </div>
+
+      <div class="edu-card">
+        <div class="edu-icon">
+          <i class="fas fa-award"></i>
+        </div>
+        <div class="edu-details">
+          <h4>AWS Certified Cloud Practitioner</h4>
+          <p>Amazon Web Services | Aug 2023</p>
+          <a href="https://www.credly.com/badges/ae583acc-4cc6-48d1-bd2e-24304a34dd27/public_url" target="_blank" class="view-link">Click to view →</a>
+        </div>
+      </div>
+
+      <div class="edu-card">
+        <div class="edu-icon">
+          <i class="fas fa-award"></i>
+        </div>
+        <div class="edu-details">
+          <h4>Red Hat Certified Enterprise Application Developer</h4>
+          <p>RedHat Inc. | Aug 2023</p>
+          <a href="https://www.credly.com/badges/4e07a216-87ae-492c-81fd-b60ed9381da1/public_url" target="_blank" class="view-link">Click to view →</a>
+        </div>
+      </div>
+
+      
+    </div>
+  </div>
+</section>
+
+
 
         <div class="projects-section" id="projects">
             <div class="projects-header">
@@ -106,7 +184,7 @@
                             <span class="tag cyan">Streamlit</span>
                             <span class="tag green">SQLite</span>
                         </div>
-                        <a href="https://github.com/charith1910/Stock-Price-Predictor" class="view-link">View Project →</a>
+                        <a href="https://github.com/charith1910/Stock-Price-Predictor" target="_blank" class="view-link">View Project →</a>
                     </div>
                 </div>
 
@@ -121,15 +199,15 @@
                             <span class="tag red">HTML5 Canvas</span>
                             <span class="tag blue">CSS3</span>
                         </div>
-                        <a href="https://github.com/charith1910/JavaScript-Project" class="view-link">View Project →</a>
+                        <a href="https://github.com/charith1910/JavaScript-Project" target="_blank" class="view-link">View Project →</a>
                     </div>
                 </div>
 
                 <div class="project-card">
-                    <img src="img/healthcare.png" alt="Healthcare System">
+                    <img src="img/evm.png" alt="Healthcare System">
                     <div class="card-content">
-                        <h3>Healthcare & Well-being System</h3>
-                        <p>A comprehensive healthcare system featuring appointment scheduling, patient records, and real-time chat between patients and healthcare providers.</p>
+                        <h3>Event Management System</h3>
+                        <p>A web app for seamless event booking and management, with attendee registration, real-time updates, and smooth coordination between organizers and participants.</p>
                         <p class="tech-title">Technologies</p>
                         <div class="tech-tags">
                             <span class="tag cyan">React</span>
@@ -137,7 +215,7 @@
                             <span class="tag darkgreen">MongoDB</span>
                             <span class="tag gray">HTML & CSS3</span>
                         </div>
-                        <a href="#" class="view-link">View Project →</a>
+                        <a href="Project-3/" target="_blank" class="view-link">View Project →</a>
                     </div>
                 </div>
             </div>
@@ -162,7 +240,7 @@
           <label for="message">Message</label>
           <textarea name="message" placeholder="Your Message" required></textarea>
           
-          <button type="submit">Send Message</button>
+          <button type="submit" class="sending-button">Send Message</button>
         </form>
     </div>
 
