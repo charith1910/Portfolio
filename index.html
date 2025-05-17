@@ -19,21 +19,27 @@
     </head>
     <body>
         <header class="navbar">
-            <div class="logo"><span class="highlight">Charith</span> Kumar</div>
-            <nav class="nav-links">
+        <div class="logo"><span class="highlight">Charith</span> Kumar</div>
+        <button class="hamburger-menu">
+            <i class="fa fa-bars"></i>
+        </button>
+        <nav class="nav-links-container">
+            <div class="nav-links">
                 <a href="#home" class="active">Home</a>
                 <a href="#about" class="active">About</a>
                 <a href="#education" class="active">Education</a>
                 <a href="#projects" class="active">Projects</a>
                 <a href="#contact" class="active">Contact</a>
-            </nav>
-        </header>
+            </div>
+        </nav>
+    </header>
 
         <section class="home-section" id="home"> 
             <div class="intro-text">
                 <p class="hello-text">Hello, I'm</p>
                 <h1>Charith Kumar<br><span class="highlight-large">Tellakula</span></h1>
-                <h2>Blending function and creativity to build                                <br>      seamless user experiences        </h2>
+                <h2 style="margin-bottom: 1px;">Blending function and creativity to build</h2>
+                <h2 style="margin-top: 1px;"><span id="typing-output"></span></h2>
                 <p class="description">A passionate web developer specializing in creating modern and <br> web applications with clean, efficient code. I build solutions that <br>combine beautiful design with powerful functionality.</p>
                 <div class="buttons">
                     <a href="#projects" class="btn primary">View My Work →</a>
