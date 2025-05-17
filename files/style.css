@@ -962,9 +962,9 @@ footer p {
         display: none;
         flex-direction: column;
         background: #0d111786;
-        backdrop-filter: blur(10px);
+        /* backdrop-filter: blur(10px); */
         position: fixed;
-        top: 70px; /* Adjust based on actual navbar height */
+        top: 80px; /* Adjust based on actual navbar height */
         right: 20px; /* Align to the right */
         z-index: 100;
         width: 130px; /* Set a specific width for the box */
@@ -982,7 +982,11 @@ footer p {
         align-items: center; /* Align text to the left */
         background: transparent; /* Keep transparent */
     }
-
+    .logo {
+        padding-left: 0; /* Remove left padding */
+        padding-right: 0; /* Remove right padding */
+        margin-top: 10px; /* Add some space below the logo */
+    }
     .nav-links a {
         width: 100%;
         text-align: center; /* Align text to the left */
@@ -998,7 +1002,7 @@ footer p {
         display: block; /* Show the hamburger menu on mobile */
         position: fixed;
         right: 20px; 
-        bottom: 15px;/* Adjust horizontal position */
+        bottom: 20px;/* Adjust horizontal position */
         padding: 10px; /* Standard padding */
         z-index: 101;
     }
@@ -1006,6 +1010,8 @@ footer p {
     .navbar {
         padding-left: 20px;
         padding-right: 20px;
+        padding-top: 10px; /* Adjust top padding */
+        padding-bottom: 20px; /* Adjust bottom padding */
         flex-direction: row; /* Logo and hamburger in a row */
         justify-content: space-between;
         align-items: center;
