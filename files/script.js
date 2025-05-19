@@ -69,3 +69,25 @@ document.addEventListener('DOMContentLoaded', function() {
         console.warn("Form element not found.");
     }
 });
+
+const form = document.querySelector("form");
+  form.addEventListener("submit", async function (e) {
+    e.preventDefault(); // Prevents reload
+
+    const formData = new FormData(form);
+
+    const response = await fetch(form.action, {
+      method: form.method,
+      body: formData,
+      headers: {
+        'Accept': 'application/json'
+      }
+    });
+
+    if (response.ok) {
+      alert("Message sent successfully!");
+      form.reset();
+    } else {
+      alert("Oops! Something went wrong.");
+    }
+  });
