@@ -180,8 +180,8 @@ body {
     align-items: center;
     flex: 1;
     padding: 20px;
-    padding-left: 120px;
-    padding-right: 80px;
+    padding-left: 50px;
+    padding-right: 20px;
 }
 
 .image-circle {
@@ -980,7 +980,7 @@ footer p {
         padding: 0px 0; /* Adjust vertical padding */
         width: 100%; /* Full width within the container */
         align-items: center; /* Align text to the left */
-        background: transparent; /* Keep transparent */
+        background: #0d111786; /* Keep transparent */
     }
     .logo {
         padding-left: 0; /* Remove left padding */
