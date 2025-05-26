@@ -815,10 +815,28 @@ footer p {
     }
 
     .buttons {
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
+        display: flex; /* Ensure it's a flex container */
+        flex-direction: row; /* Allow them to try to be in a row first */
+        flex-wrap: wrap; /* Allow them to wrap to the next line if there's not enough space */
+        justify-content: center; /* Center the buttons horizontally */
+        gap: 15px; /* Keep the gap between buttons */
+        /* You might want to add a max-width to the .buttons container itself
+           if they spread out too much on slightly wider phone screens,
+           e.g., max-width: 320px; and then margin: 0 auto; to center it.
+           But start without it to see how they naturally arrange. */
     }
+
+    .buttons .btn {
+        /* Add some basic styling for the buttons themselves to ensure they shrink/grow */
+        flex-grow: 1; /* Allow buttons to grow to fill available space */
+        flex-shrink: 1; /* Allow buttons to shrink if needed */
+        flex-basis: 120px; /* Give them a base width, they'll wrap if narrower */
+        max-width: 48%; /* To encourage two per row, leave a little space for gap */
+        /* You might need to adjust padding or font-size for smaller buttons */
+        padding: 12px 20px; /* Example adjustment if they become too big */
+        font-size: 14px; /* Example adjustment */
+    }
+
 
     .profile-image {
         padding-left: 20px;
